@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/movie_details_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#35A"
+            android:layout_marginTop="5dp"
+            android:text="Loading ..."
+            android:padding="12dp"
+            android:textAlignment="center"
+
+            android:textColor="#FFF"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageLink"
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:layout_below="@id/movieName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/imageLink"
+            android:layout_toRightOf="@+id/imageLink"
+            android:text="2015"
+
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageLink"
+            android:layout_toRightOf="@+id/imageLink"
+            android:text="rate"
+            android:textSize="30sp" />
+
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rate"
+            android:src="@drawable/heart_love_favorite"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageLink"
+    />
+
+        <TextView
+            android:id="@+id/movieDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageLink"
+            android:layout_margin="10dp"
+            android:text="this movie is about war this movie is about war this movie is about war "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/trailerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieDesc"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="7dp"
+            android:text="Trailers"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+        <ListView
+            android:id="@+id/trailers"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/trailerTitle"
+
+            ></ListView>
+
+        <TextView
+            android:id="@+id/reviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trailers"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:padding="7dp"
+            android:text="Reviews"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewTitle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="John Michel"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author"
+            android:layout_marginLeft="15dp"
+            android:text="content test"
+            android:textSize="20sp"
+
+            />
+    </RelativeLayout>
+
+</ScrollView>
